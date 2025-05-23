@@ -6,8 +6,8 @@ export const GENERAL_INFO = {
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Owais, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    oldPortfolio: '',
+    upworkProfile: '',
 };
 
 export const SOCIAL_LINKS = [
@@ -16,97 +16,97 @@ export const SOCIAL_LINKS = [
         name: 'linkedin',
         url: 'https://www.linkedin.com/in/owais-khan-266492222/',
     },
-    { name: 'facebook', url: 'https://www.facebook.com/okhan945' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    // { name: 'facebook', url: 'https://www.facebook.com/okhan945' },
+    { name: 'LeetCode', url: 'https://leetcode.com/u/owaisazmal/' },
 ];
 
 export const MY_STACK = {
     frontend: [
         {
             name: 'Javascript',
-            icon: '/logo/js.png',
+            icon: './logo/js.png',
         },
         {
             name: 'Typescript',
-            icon: '/logo/ts.png',
+            icon: './logo/ts.png',
         },
         {
             name: 'React',
-            icon: '/logo/react.png',
+            icon: './logo/react.png',
         },
         {
             name: 'Next.js',
-            icon: '/logo/next.png',
+            icon: './logo/next.png',
         },
         {
             name: 'Redux',
-            icon: '/logo/redux.png',
+            icon: './logo/redux.png',
         },
         {
             name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
+            icon: './logo/tailwind.png',
         },
         {
             name: 'GSAP',
-            icon: '/logo/gsap.png',
+            icon: './logo/gsap.png',
         },
         {
             name: 'Frammer Motion',
-            icon: '/logo/framer-motion.png',
+            icon: './logo/framer-motion.png',
         },
         {
             name: 'SASS',
-            icon: '/logo/sass.png',
+            icon: './logo/sass.png',
         },
         {
             name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
+            icon: './logo/bootstrap.svg',
         },
     ],
     backend: [
         {
             name: 'Node.js',
-            icon: '/logo/node.png',
+            icon: './logo/node.png',
         },
         {
             name: 'Nest.js',
-            icon: '/logo/nest.svg',
+            icon: './logo/nest.svg',
         },
         {
             name: 'Express.js',
-            icon: '/logo/express.png',
+            icon: './logo/express.png',
         },
     ],
     database: [
         {
             name: 'MySQL',
-            icon: '/logo/mysql.svg',
+            icon: './logo/mysql.svg',
         },
         {
             name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
+            icon: './logo/postgreSQL.png',
         },
         {
             name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
+            icon: './logo/mongodb.svg',
         },
         {
             name: 'Prisma',
-            icon: '/logo/prisma.png',
+            icon: './logo/prisma.png',
         },
     ],
     tools: [
         {
             name: 'Git',
-            icon: '/logo/git.png',
+            icon: './logo/git.png',
         },
         {
             name: 'Docker',
-            icon: '/logo/docker.svg',
+            icon: './logo/docker.svg',
         },
         {
             name: 'AWS',
-            icon: '/logo/aws.png',
+            icon: './logo/aws.png',
         },
     ],
 };
