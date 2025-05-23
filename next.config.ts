@@ -2,7 +2,7 @@
 const nextConfig = {
     output: 'export',
     images: {
-        unoptimized: true,
+        unoptimized: true, // required for static hosting platforms like GitHub Pages
     },
 };
 
