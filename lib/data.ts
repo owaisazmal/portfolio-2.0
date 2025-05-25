@@ -113,40 +113,40 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'MTI Electronics',
-        slug: 'mti-electronics',
-        liveUrl: 'https://mti-electronics.vercel.app/',
-        year: 2025,
+        title: 'Malkit Sweets & Catering',
+        slug: 'malkit-sweets',
+        liveUrl: 'https://malkitsweetsandcatering.com/',
+        year: 2024,
         description: `
-      A complete agency portfolio platform built for MTI Electronics to showcase their services, blog content, and product offerings. <br/> <br/>
+      A vibrant and immersive restaurant and catering services platform developed for Malkit Sweets & Catering, a premier provider of traditional Indian cuisine in California. The site blends rich cultural storytelling with a modern web experience to highlight their culinary offerings, chef expertise, and event catering services. <br/> <br/>
       
       Key Features:<br/>
       <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
+        <li>🍛 Catering Services Showcase – Dedicated sections for Wedding, Party, and On-Demand catering with service highlights and visual storytelling</li>
+        <li>👨‍🍳 Chef Profiles – Meet-the-chefs module spotlighting industry veterans like Mr. Malkit and team</li>
+        <li>📺 Multimedia Integration – Engaging video embeds and image carousels to bring the kitchen to life</li>
         <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
+        <li>📍 Location & Contact Integration – Google Maps and quick-contact setup for local customers</li>
       </ul><br/>
       
       Technical Highlights:
       <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
+        <li>Integrated Swiper.js for dynamic visual carousels in service and chef sections</li>
+        <li>Customized Payload CMS to enable effortless content updates across menus, staff, and videos</li>
+        <li>Developed elegant, reusable UI components using shadcn and Tailwind CSS</li>
+        <li>Optimized form submissions using React Hook Form for user inquiries and event bookings</li>
       </ul>
       `,
         role: `
       Full-Stack Developer <br/>
       Owned the entire development lifecycle:
       <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
+        <li>✅ Backend – Designed Payload CMS architecture with collections for services, chefs, and media</li>
+        <li>🎨 Frontend – Crafted responsive, culturally inspired UI with Tailwind and shadcn</li>
+        <li>🔄 State Management – Managed CMS data flow and hydration using Next.js capabilities</li>
         <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
         <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
+        <li>📹 Media Embeds – Integrated promotional videos and carousels to enhance user engagement</li>
       </ul>
       `,
         techStack: [
@@ -158,12 +158,9 @@ export const PROJECTS: IProject[] = [
             'React Hook Form',
             'Vercel',
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
+        thumbnail: './projects/images/MSC-1.png',
         longThumbnail: '/projects/long/mti-electronics.webp',
-        images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
-        ],
+        images: ['./projects/images/MSC-1.png', './projects/images/MSC-2.png'],
     },
     {
         title: 'Epikcart',
