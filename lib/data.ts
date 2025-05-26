@@ -163,8 +163,8 @@ export const PROJECTS: IProject[] = [
         images: ['./projects/images/MSC-1.png', './projects/images/MSC-2.png'],
     },
     {
-        title: 'Epikcart',
-        slug: 'epikcart',
+        title: 'Real Estate Portfolio',
+        slug: 'Sabreal',
         techStack: [
             'React',
             'Redux',
@@ -174,8 +174,8 @@ export const PROJECTS: IProject[] = [
             'debouncing',
             'Api Integration',
         ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
+        thumbnail: './projects/thumbnail/epikcart.jpg',
+        longThumbnail: './projects/long/epikcart.jpg',
         images: [
             '/projects/images/epikcart-1.png',
             '/projects/images/epikcart-2.png',
@@ -286,9 +286,9 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Accesibility Engineer',
+        company: 'CVD Diamond Inc',
+        duration: 'Dec 2022 - Present',
     },
     {
         title: 'Frontend Developer',
