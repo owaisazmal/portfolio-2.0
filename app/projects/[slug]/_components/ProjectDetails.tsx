@@ -191,7 +191,7 @@ const ProjectDetails = ({ project }: Props) => {
                             }}
                         >
                             <a
-                                href={image}
+                                href={project.liveUrl}
                                 target="_blank"
                                 className="absolute top-4 right-4 bg-background/70 text-foreground size-12 inline-flex justify-center items-center transition-all opacity-0 hover:bg-primary hover:text-primary-foreground group-hover:opacity-100"
                             >
