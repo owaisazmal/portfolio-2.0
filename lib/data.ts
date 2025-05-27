@@ -7,7 +7,7 @@ export const GENERAL_INFO = {
     emailBody: 'Hi Owais, I am reaching out to you because...',
 
     oldPortfolio: '',
-    upworkProfile: '',
+    resume: 'https://drive.google.com/file/d/1Ii9kEX9H1fY7xzIFGNAmPkEYwAn1gx2H/view?usp=sharing',
 };
 
 export const SOCIAL_LINKS = [
@@ -304,43 +304,43 @@ export const PROJECTS: IProject[] = [
         - 🖥️ CMS Customization – Designed user-friendly admin dashboards for real estate staff
 `,
     },
-    {
-        title: 'Expense Tracker App',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
+    // {
+    //     title: 'Expense Tracker App',
+    //     slug: 'crenotive',
+    //     techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
+    //     thumbnail: '/projects/thumbnail/consulting-finance.jpg',
+    //     longThumbnail: '/projects/long/consulting-finance.jpg',
+    //     images: [
+    //         '/projects/images/consulting-finance-1.png',
+    //         '/projects/images/consulting-finance-2.png',
+    //         '/projects/images/consulting-finance-3.png',
+    //     ],
+    //     sourceCode: 'https://github.com/Tajmirul/crenotive',
+    //     liveUrl: 'https://crenotive.netlify.app/',
+    //     year: 2023,
+    //     description:
+    //         'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
+    //     role: ``,
+    // },
+    // {
+    //     title: 'devLinks',
+    //     slug: 'devLinks',
+    //     techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
+    //     thumbnail: '/projects/thumbnail/devLinks.jpg',
+    //     longThumbnail: '/projects/long/devLinks.jpg',
+    //     images: [
+    //         '/projects/images/devLinks-1.png',
+    //         '/projects/images/devLinks-2.png',
+    //         '/projects/images/devLinks-3.png',
+    //     ],
+    //     sourceCode: 'https://github.com/Tajmirul/devsLink',
+    //     liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
+    //     year: 2023,
+    //     description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
 
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
-    },
+    //         I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
+    //     role: ``,
+    // },
 ];
 
 export const MY_EXPERIENCE = [
@@ -351,17 +351,17 @@ export const MY_EXPERIENCE = [
     },
     {
         title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
+        company: 'AHC Technologies',
+        duration: 'Oct 2020 - Nov 2022',
     },
-    {
-        title: 'FRONTEND ENGINEER',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
-    },
+    // {
+    //     title: 'FRONTEND ENGINEER',
+    //     company: 'Anchorblock Technology',
+    //     duration: 'Oct 2022 - Sep 2023',
+    // },
+    // {
+    //     title: 'Frontend Developer (Part-time)',
+    //     company: 'Branex IT',
+    //     duration: 'Jan 2022 - Oct 2022',
+    // },
 ];
