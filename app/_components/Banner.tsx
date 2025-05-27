@@ -44,7 +44,7 @@ const Banner = () => {
                     <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
                         <span className="text-primary">Accessibility</span>
                         <br />
-                        <span className="ml-4">Tester</span>
+                        <span className="ml-0">Tester</span>
                     </h1>
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
                         Hi! I&apos;m{' '}

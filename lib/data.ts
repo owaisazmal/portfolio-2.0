@@ -39,8 +39,8 @@ export const MY_STACK = {
             icon: './logo/next.png',
         },
         {
-            name: 'Redux',
-            icon: './logo/redux.png',
+            name: 'HTML',
+            icon: './logo/HTML5.png',
         },
         {
             name: 'Tailwind CSS',
@@ -51,8 +51,8 @@ export const MY_STACK = {
             icon: './logo/gsap.png',
         },
         {
-            name: 'Frammer Motion',
-            icon: './logo/framer-motion.png',
+            name: 'CSS',
+            icon: './logo/CSS3.svg',
         },
         {
             name: 'SASS',
@@ -63,50 +63,50 @@ export const MY_STACK = {
             icon: './logo/bootstrap.svg',
         },
     ],
-    backend: [
+    Readers: [
         {
-            name: 'Node.js',
-            icon: './logo/node.png',
+            name: 'NVDA',
+            icon: './logo/NVDA_Logo.png',
         },
         {
-            name: 'Nest.js',
-            icon: './logo/nest.svg',
+            name: 'JAWS',
+            icon: './logo/jaws.png',
         },
-        {
-            name: 'Express.js',
-            icon: './logo/express.png',
-        },
+        // {
+        //     name: 'Express.js',
+        //     icon: './logo/express.png',
+        // },
     ],
-    database: [
-        {
-            name: 'MySQL',
-            icon: './logo/mysql.svg',
-        },
-        {
-            name: 'PostgreSQL',
-            icon: './logo/postgreSQL.png',
-        },
-        {
-            name: 'MongoDB',
-            icon: './logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: './logo/prisma.png',
-        },
-    ],
+    // database: [
+    //     {
+    //         name: 'MySQL',
+    //         icon: './logo/mysql.svg',
+    //     },
+    //     {
+    //         name: 'PostgreSQL',
+    //         icon: './logo/postgreSQL.png',
+    //     },
+    //     {
+    //         name: 'MongoDB',
+    //         icon: './logo/mongodb.svg',
+    //     },
+    //     {
+    //         name: 'Prisma',
+    //         icon: './logo/prisma.png',
+    //     },
+    // ],
     tools: [
+        {
+            name: 'axe DevTools',
+            icon: './logo/axe_DevTools.png',
+        },
         {
             name: 'Git',
             icon: './logo/git.png',
         },
         {
-            name: 'Docker',
-            icon: './logo/docker.svg',
-        },
-        {
-            name: 'AWS',
-            icon: './logo/aws.png',
+            name: 'WAVE',
+            icon: './logo/WAVE.webp',
         },
     ],
 };
