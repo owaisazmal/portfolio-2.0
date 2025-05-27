@@ -1,7 +1,7 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'owaisazmal@hotmail.com',
+    email: 'owaiskhan461@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Owais, I am reaching out to you because...',
@@ -207,32 +207,30 @@ export const PROJECTS: IProject[] = [
     //     - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
     // },
     {
-        title: 'Website Accessibility Audit',
-        slug: 'Website-Audit',
+        title: 'Resume Roaster',
+        slug: 'resume-roaster',
         techStack: [
-            'WCAG 2.1 Level AA',
-            'NVDA',
-            'WAVE',
-            'Chrome DevTools',
-            'AXE DevTools',
+            'GPT-4',
+            'Next.js',
+            'Postgressql',
+            'Prisma',
+            'Tailwind CSS',
         ],
-        thumbnail: './projects/images/Audit1.png',
-        longThumbnail: './projects/images/Audit2.png',
+        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
+        longThumbnail: '/projects/long/resume-roaster.jpg',
         images: [
-            './projects/images/Audit1.png',
-            './projects/images/Audit2.png',
+            '/projects/images/resume-roaster-1.png',
+            '/projects/images/resume-roaster-2.png',
+            '/projects/images/resume-roaster-3.png',
         ],
-        liveUrl:
-            'https://docs.google.com/spreadsheets/d/1_a0qTDEy4MZY_ianS6mSct5a_rp47e1eRhWr8HMCoZE/edit?usp=sharing',
-        year: 2025,
+        liveUrl: 'https://resume-roaster.vercel.app/',
+        year: 2023,
         description:
-            'This accessibility audit was conducted on the Daily Grind Cafe website to identify barriers that could prevent individuals with disabilities from accessing its content and services. The audit revealed several critical and moderate accessibility issues primarily related to semantic HTML, color contrast, and keyboard navigation. Addressing these issues is crucial for enhancing inclusivity, complying with accessibility standards (WCAG 2.1 AA), and potentially avoiding legal risks while expanding the cafe customer base.',
-        role: `
-        - Automated Testing (Simulated WAVE/axe DevTools): Initial scan to identify common, easily detectable issues.<br/>
-        - Screen Reader Compatibility: Tested navigation, content consumption, and interactive elements with a simulated screen reader (NVDA).<br/>
-        - Keyboard Navigation: Assessed complete website navigation using only the keyboard (Tab, Shift+Tab, Enter, Spacebar) to check for focus management, logical tab order, and access to all interactive elements.<br/>
-        - Code Review: Inspected HTML structure for semantic correctness and ARIA attribute usage.<br/>
-        - WCAG 2.1 AA Checklist: Used as the primary reference for evaluation criteria.`,
+            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
+        role: `As the sole developer and business owner, I:<br/>
+        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
+        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
+        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
     },
     {
         title: 'Real Estate Portfolio',
