@@ -1,7 +1,7 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'owaiskhan461@gmail.com',
+    email: 'owaisazmal@hotmail.com',
 
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Owais, I am reaching out to you because...',
