@@ -57,11 +57,13 @@ const Banner = () => {
                     </p>
                     <Button
                         as="link"
+                        title="Resume"
                         target="_blank"
                         rel="noopener noreferrer"
                         href={GENERAL_INFO.resume}
                         variant="primary"
                         className="mt-9 banner-button slide-up-and-fade"
+                        aria-label="Open Owais's resume in a new tab"
                     >
                         Resume
                     </Button>
