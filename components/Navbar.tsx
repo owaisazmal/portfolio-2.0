@@ -91,13 +91,19 @@ const Navbar = () => {
                     )}
                 ></div>
 
-                <div className="grow flex md:items-center w-full max-w-[300px] mx-8 sm:mx-auto">
+                <div
+                    className="grow flex md:items-center w-full max-w-[300px] mx-8 sm:mx-auto"
+                    aria-label="Social links"
+                >
                     <div className="flex gap-10 lg:justify-between max-lg:flex-col w-full">
                         <div className="max-lg:order-2">
                             <p className="text-muted-foreground mb-5 md:mb-8">
                                 SOCIAL
                             </p>
-                            <ul className="space-y-3">
+                            <ul
+                                className="space-y-3"
+                                aria-labelledby="social-links-label"
+                            >
                                 {SOCIAL_LINKS.map((link) => (
                                     <li key={link.name}>
                                         <a
