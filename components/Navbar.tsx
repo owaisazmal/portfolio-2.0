@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { MoveUpRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
-
+//test
 const COLORS = [
     'bg-yellow-500 text-black',
     'bg-blue-500 text-white',
