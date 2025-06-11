@@ -62,7 +62,7 @@ const Banner = () => {
                         rel="noopener noreferrer"
                         href={GENERAL_INFO.resume}
                         variant="primary"
-                        className="mt-9 banner-button slide-up-and-fade"
+                        className="mt-9 banner-button slide-up-and-fade focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
                         aria-label="Open Owais's resume in a new tab"
                     >
                         Resume

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { MoveUpRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
-//test
+
 const COLORS = [
     'bg-yellow-500 text-black',
     'bg-blue-500 text-white',
@@ -40,37 +40,38 @@ const Navbar = () => {
             <div className="sticky top-0 z-[4]">
                 <button
                     className={cn(
-                        'group size-12 absolute top-5 right-5 md:right-10 z-[2] rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500', // Added focus styles
+                        'group size-12 absolute top-5 right-5 md:right-10 z-[2] rounded-full',
+                        'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-opacity-75',
+                        'transition-all duration-200',
                     )}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    // --- Accessibility additions for the button ---
                     aria-label={
                         isMenuOpen
                             ? 'Close navigation menu'
                             : 'Open navigation menu'
                     }
                     aria-expanded={isMenuOpen}
-                    aria-controls="main-navigation-menu" // ID of the menu container
+                    aria-controls="main-navigation-menu"
                 >
                     <span
                         className={cn(
-                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 -translate-y-[5px] ',
+                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 -translate-y-[5px]',
                             {
                                 'rotate-45 -translate-y-1/2': isMenuOpen,
                                 'md:group-hover:rotate-12': !isMenuOpen,
                             },
                         )}
-                        aria-hidden="true" // Hide from screen readers
+                        aria-hidden="true"
                     ></span>
                     <span
                         className={cn(
-                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 translate-y-[5px] ',
+                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 translate-y-[5px]',
                             {
                                 '-rotate-45 -translate-y-1/2': isMenuOpen,
                                 'md:group-hover:-rotate-12': !isMenuOpen,
                             },
                         )}
-                        aria-hidden="true" // Hide from screen readers
+                        aria-hidden="true"
                     ></span>
                 </button>
             </div>
@@ -83,24 +84,20 @@ const Navbar = () => {
                     },
                 )}
                 onClick={() => setIsMenuOpen(false)}
-                // Consider adding role="button" and aria-label="Close menu" here too
-                // if this overlay is meant to be clickable to close the menu.
-                // Also handle keyboard interaction (e.g., Space/Enter key)
-                aria-label="Close menu by clicking outside" // added for clarity
+                aria-label="Close menu by clicking outside"
+                tabIndex={isMenuOpen ? 0 : -1}
             ></div>
 
             <div
-                id="main-navigation-menu" // Added ID for aria-controls
+                id="main-navigation-menu"
                 className={cn(
                     'fixed top-0 right-0 h-[100dvh] w-[500px] max-w-[calc(100vw-3rem)] transform translate-x-full transition-transform duration-700 z-[3] overflow-hidden gap-y-14',
                     'flex flex-col lg:justify-center py-10',
                     { 'translate-x-0': isMenuOpen },
                 )}
-                // Role 'dialog' or 'menu' can be added if this is a complex menu.
-                // For a simple navigation, a 'nav' element within might be sufficient.
-                role="dialog" // Or "menu" if it strictly contains only menu items
-                aria-modal="true" // Indicates that the element is a modal and blocks content behind it.
-                aria-label="Main navigation" // Descriptive label for the overall menu
+                role="dialog"
+                aria-modal="true"
+                aria-label="Main navigation"
             >
                 <div
                     className={cn(
@@ -111,17 +108,13 @@ const Navbar = () => {
                     )}
                 ></div>
 
-                <div
-                    className="grow flex md:items-center w-full max-w-[300px] mx-8 sm:mx-auto"
-                    // Removed aria-label="Social links" from this div
-                >
+                <div className="grow flex md:items-center w-full max-w-[300px] mx-8 sm:mx-auto">
                     <div className="flex gap-10 lg:justify-between max-lg:flex-col w-full">
                         <div className="max-lg:order-2">
                             <p
                                 id="social-links-label"
                                 className="text-muted-foreground mb-5 md:mb-8"
                             >
-                                {/* Moved the ID here */}
                                 SOCIAL
                             </p>
                             <ul
@@ -134,15 +127,18 @@ const Navbar = () => {
                                             href={link.url}
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="text-lg capitalize hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" // Added focus styles
-                                            // Add aria-label if the link text alone isn't clear enough, e.g., "Visit my LinkedIn profile"
+                                            className={cn(
+                                                'text-lg capitalize hover:underline',
+                                                'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-opacity-75 px-1 py-0.5 rounded',
+                                                'transition-all duration-200',
+                                            )}
+                                            aria-label={`Visit my ${link.name} profile (opens in new tab)`}
                                         >
                                             {link.name}
                                             <span className="sr-only">
                                                 {' '}
                                                 (opens in a new tab)
-                                            </span>{' '}
-                                            {/* Screen reader only text for external links */}
+                                            </span>
                                         </a>
                                     </li>
                                 ))}
@@ -153,7 +149,6 @@ const Navbar = () => {
                                 id="menu-links-label"
                                 className="text-muted-foreground mb-5 md:mb-8"
                             >
-                                {/* Added ID here */}
                                 MENU
                             </p>
                             <ul
@@ -167,19 +162,24 @@ const Navbar = () => {
                                                 router.push(link.url);
                                                 setIsMenuOpen(false);
                                             }}
-                                            className="group text-xl flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" // Added focus styles
+                                            className={cn(
+                                                'group text-xl flex items-center gap-3 w-full text-left',
+                                                'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-opacity-75 px-1 py-0.5 rounded',
+                                                'transition-all duration-200',
+                                            )}
+                                            aria-label={`Navigate to ${link.name}`}
                                         >
                                             <span
                                                 className={cn(
                                                     'size-3.5 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
                                                     COLORS[idx],
                                                 )}
-                                                aria-hidden="true" // Hide the decorative circle from screen readers
+                                                aria-hidden="true"
                                             >
                                                 <MoveUpRight
                                                     size={8}
                                                     className="scale-0 group-hover:scale-100 transition-all"
-                                                    aria-hidden="true" // Hide the icon from screen readers
+                                                    aria-hidden="true"
                                                 />
                                             </span>
                                             {link.name}
@@ -195,7 +195,12 @@ const Navbar = () => {
                     <p className="text-muted-foreground mb-4">GET IN TOUCH</p>
                     <a
                         href={`mailto:${GENERAL_INFO.email}`}
-                        className="hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" // Added focus styles
+                        className={cn(
+                            'hover:underline',
+                            'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-opacity-75 px-1 py-0.5 rounded',
+                            'transition-all duration-200',
+                        )}
+                        aria-label={`Email me at ${GENERAL_INFO.email}`}
                     >
                         {GENERAL_INFO.email}
                     </a>
