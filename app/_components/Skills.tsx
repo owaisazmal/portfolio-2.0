@@ -60,9 +60,10 @@ const Skills = () => {
     return (
         <section id="my-stack" ref={containerRef}>
             <div className="container">
+                <br></br>
                 <SectionTitle title="My Stack" />
-
                 <div className="space-y-20">
+
                     {Object.entries(MY_STACK).map(([key, value]) => (
                         <div className="grid sm:grid-cols-12" key={key}>
                             <div className="sm:col-span-5">
