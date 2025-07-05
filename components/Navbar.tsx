@@ -2,10 +2,10 @@
 import { cn } from '@/lib/utils';
 
 const MENU_LINKS = [
-    { name: 'About Me', url: '/#about-me' },
-    { name: 'Skills', url: '/#my-stack' },
-    { name: 'Experience', url: '/#my-experience' },
-    { name: 'Projects', url: '/#selected-projects' },
+    { name: 'About Me', url: './#about-me' },
+    { name: 'Skills', url: './#my-stack' },
+    { name: 'Experience', url: './#my-experience' },
+    { name: 'Projects', url: './#selected-projects' },
 ];
 
 const Navbar = () => {
