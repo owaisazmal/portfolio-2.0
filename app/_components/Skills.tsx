@@ -61,6 +61,8 @@ const Skills = () => {
         <section id="my-stack" ref={containerRef}>
             <div className="container">
                 <br></br>
+                <br></br>
+                <br></br>
                 <SectionTitle title="My Stack" />
                 <div className="space-y-20">
 
