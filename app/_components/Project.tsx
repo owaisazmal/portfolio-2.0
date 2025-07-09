@@ -126,7 +126,7 @@ const Project = ({ index, project, selectedProject, onMouseEnter }: Props) => {
                 </div>
                 <div className="">
                     <h3 className="text-4xl xs:text-6xl flex gap-4 font-anton transition-all duration-700 bg-gradient-to-r from-primary to-foreground from-[50%] to-[50%] bg-[length:200%] bg-right bg-clip-text text-transparent group-hover:bg-left">
-                        Your Content Here
+                        {project.title}
                     </h3>
                     <div className="mt-2 flex flex-wrap gap-3 text-muted-foreground text-xs">
                         {project.techStack
