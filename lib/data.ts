@@ -162,50 +162,6 @@ export const PROJECTS: IProject[] = [
         longThumbnail: '/projects/long/mti-electronics.webp',
         images: ['./projects/images/MSC-1.png', './projects/images/MSC-2.png'],
     },
-    // {
-    //     title: 'Real Estate Portfolio',
-    //     slug: 'Sarbreal',
-    //     techStack: [
-    //         'React',
-    //         'Redux',
-    //         'React i18n',
-    //         'Tailwind CSS',
-    //         'Framer Motion',
-    //         'React Hook Form',
-    //         'Api Integration',
-    //     ],
-    //     thumbnail: './projects/images/SarbrealShort.png',
-    //     longThumbnail: './projects/images/SarbrealLong.png',
-    //     images: [
-    //         './projects/images/SarbrealShort.png',
-    //         './projects/images/Sarbreal1.png',
-    //     ],
-    //     liveUrl: 'https://sarbreal.com/',
-    //     year: 2024,
-    //     description: `A clean, modern real estate platform developed for Sarb Real Estate, a property services firm focused on delivering personalized buying, selling, and investment experiences. The site positions the brand as a trustworthy local expert with a sleek, intuitive interface and robust content management capabilities.,<br/> <br/>
-
-    //     Key Features:<br/>
-    //         <ul>
-    //             <li>🏠 Property Listing System – Dynamically generated pages for featured properties with images and contact CTAs</li>
-    //             <li>🧑‍💼 Agent Profiles – Highlighted real estate professionals with bios and contact links to build trust</li>
-    //             <li>🎥 Home Page Carousel – Engaging visual slider to showcase premium listings and services</li>
-    //             <li>🧭 Location-Based Navigation – Clean sectioning for exploring properties and services</li>
-    //             <li>📱 Mobile Optimization – Fully responsive design for mobile-first browsing</li>
-    //         </ul><br/>
-    //     Technical Highlights:
-    //         <ul>
-    //             <li>Engineered property carousel using Swiper.js with smooth transitions and content overlays</li>
-    //             <li>Customized Payload CMS to manage listings, agent bios, testimonials, and media assets</li>
-    //             <li>Built fully modular UI components using shadcn and Tailwind CSS for brand consistency</li>
-    //             <li>Leveraged React Hook Form for seamless lead capture through property inquiry forms</li>
-    //         </ul>
-    //     `,
-    //     role: `As the frontend developer in a team of five, I: <br/>
-    //     - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-    //     - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-    //     - Integrated multi-language support with React i18n, including RTL handling.<br/>
-    //     - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
-    // },
     {
         title: 'Website Accessibility Audit',
         slug: 'Website-Audit',
@@ -234,32 +190,6 @@ export const PROJECTS: IProject[] = [
         - Code Review: Inspected HTML structure for semantic correctness and ARIA attribute usage.<br/>
         - WCAG 2.1 AA Checklist: Used as the primary reference for evaluation criteria.`,
     },
-    // {
-    //     title: 'Resume Roaster',
-    //     slug: 'resume-roaster',
-    //     techStack: [
-    //         'GPT-4',
-    //         'Next.js',
-    //         'Postgressql',
-    //         'Prisma',
-    //         'Tailwind CSS',
-    //     ],
-    //     thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-    //     longThumbnail: '/projects/long/resume-roaster.jpg',
-    //     images: [
-    //         '/projects/images/resume-roaster-1.png',
-    //         '/projects/images/resume-roaster-2.png',
-    //         '/projects/images/resume-roaster-3.png',
-    //     ],
-    //     liveUrl: 'https://resume-roaster.vercel.app/',
-    //     year: 2023,
-    //     description:
-    //         'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-    //     role: `As the sole developer and business owner, I:<br/>
-    //     - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-    //     - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-    //     - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    // },
     {
         title: 'Real Estate Portfolio',
         slug: 'Sarbreal',
@@ -304,24 +234,31 @@ export const PROJECTS: IProject[] = [
         - 🖥️ CMS Customization – Designed user-friendly admin dashboards for real estate staff
 `,
     },
-    // {
-    //     title: 'Expense Tracker App',
-    //     slug: 'crenotive',
-    //     techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-    //     thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-    //     longThumbnail: '/projects/long/consulting-finance.jpg',
-    //     images: [
-    //         '/projects/images/consulting-finance-1.png',
-    //         '/projects/images/consulting-finance-2.png',
-    //         '/projects/images/consulting-finance-3.png',
-    //     ],
-    //     sourceCode: 'https://github.com/Tajmirul/crenotive',
-    //     liveUrl: 'https://crenotive.netlify.app/',
-    //     year: 2023,
-    //     description:
-    //         'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-    //     role: ``,
-    // },
+    {
+        title: 'Expense Tracker App',
+        slug: 'expense-tracker',
+        techStack: ['SwiftUI', 'SwiftUICharts'],
+        thumbnail: './projects/images/ExpTracker1.png',
+        longThumbnail: './projects/images/ExpTracker1.png',
+        images: [
+            './projects/images/ExpTracker1.png',
+            './projects/images/ExpTracker2.png',
+        ],
+        sourceCode: 'https://github.com/owaisazmal/ExpenseTracker',
+        year: 2023,
+        description: `ExpenseTracker is a mobile application built using SwiftUI and SwiftUICharts. The app helps users keep track of their expenses and provides a visual representation of their spending habits.<br/> <br/>Key Features:<br/>
+<ul>
+    <li>📊 <strong>Expense Overview</strong> – Displays a summary of all expenses in a clear and concise manner.</li>
+    <li>📈 <strong>Interactive Charts</strong> – Visualizes expense data with interactive line charts.</li>
+    <li>💸 <strong>Recent Transactions</strong> – Lists the most recent transactions for easy tracking.</li>
+    <li>🔔 <strong>Notification Badge</strong> – Displays a notification icon to keep users informed of new updates.</li>
+    <li>🌙 <strong>Dark Mode</strong> – Supports dark mode for comfortable usage in low-light environments.</li>
+</ul>`,
+        role: `- Designed and developed a clean, intuitive user interface for tracking expenses.<br/>
+- Integrated interactive line charts using <strong>SwiftUICharts</strong> for enhanced data presentation.<br/>
+- Added dark mode support to improve accessibility and user experience in different lighting conditions.<br/>
+- Built a robust system ensuring the app delivered real-time notification updates effectively.`,
+},
     // {
     //     title: 'devLinks',
     //     slug: 'devLinks',
@@ -337,7 +274,7 @@ export const PROJECTS: IProject[] = [
     //     liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
     //     year: 2023,
     //     description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
-
+    //
     //         I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
     //     role: ``,
     // },
