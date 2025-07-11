@@ -14,7 +14,7 @@ export const SOCIAL_LINKS = [
     { name: 'github', url: 'https://github.com/owaisazmal' },
     {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/owais-khan-266492222/',
+        url: 'https://www.linkedin.com/in/owais-k-0ab718323/',
     },
     // { name: 'facebook', url: 'https://www.facebook.com/okhan945' },
     { name: 'LeetCode', url: 'https://leetcode.com/u/owaisazmal/' },
