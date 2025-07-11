@@ -247,37 +247,47 @@ export const PROJECTS: IProject[] = [
         sourceCode: 'https://github.com/owaisazmal/ExpenseTracker',
         year: 2023,
         description: `ExpenseTracker is a mobile application built using SwiftUI and SwiftUICharts. The app helps users keep track of their expenses and provides a visual representation of their spending habits.<br/> <br/>Key Features:<br/>
+        <ul>
+            <li>📊 <strong>Expense Overview</strong> – Displays a summary of all expenses in a clear and concise manner.</li>
+            <li>📈 <strong>Interactive Charts</strong> – Visualizes expense data with interactive line charts.</li>
+            <li>💸 <strong>Recent Transactions</strong> – Lists the most recent transactions for easy tracking.</li>
+            <li>🔔 <strong>Notification Badge</strong> – Displays a notification icon to keep users informed of new updates.</li>
+            <li>🌙 <strong>Dark Mode</strong> – Supports dark mode for comfortable usage in low-light environments.</li>
+        </ul>`,
+                role: `- Designed and developed a clean, intuitive user interface for tracking expenses.<br/>
+        - Integrated interactive line charts using <strong>SwiftUICharts</strong> for enhanced data presentation.<br/>
+        - Added dark mode support to improve accessibility and user experience in different lighting conditions.<br/>
+        - Built a robust system ensuring the app delivered real-time notification updates effectively.`,
+        },
+    {
+        title: 'WCAG Checklist Tool',
+        slug: 'accessibility-checklist-tool',
+        techStack: ['HTML', 'CSS', 'JavaScript'],
+        thumbnail: './projects/images/Checklist1.png',
+        longThumbnail: './projects/images/Checklist1.png',
+        images: [
+            './projects/images/Checklist1.png',
+            './projects/images/Checklist2.png',
+        ],
+        sourceCode: 'https://github.com/owaisazmal/AccessibilityChecklistTool',
+        liveUrl: 'https://owaisazmal.github.io/AccessibilityChecklistTool/',
+        year: 2023,
+        description: `A simple, interactive web-based checklist tool designed to help developers and designers evaluate key accessibility aspects of their websites. It is based on a curated subset of the Web Content Accessibility Guidelines (WCAG) 2.2 AA.<br/> <br/>Key Features:<br/>
 <ul>
-    <li>📊 <strong>Expense Overview</strong> – Displays a summary of all expenses in a clear and concise manner.</li>
-    <li>📈 <strong>Interactive Charts</strong> – Visualizes expense data with interactive line charts.</li>
-    <li>💸 <strong>Recent Transactions</strong> – Lists the most recent transactions for easy tracking.</li>
-    <li>🔔 <strong>Notification Badge</strong> – Displays a notification icon to keep users informed of new updates.</li>
-    <li>🌙 <strong>Dark Mode</strong> – Supports dark mode for comfortable usage in low-light environments.</li>
+    <li>✅ <strong>Interactive Checklist</strong> – Seamlessly check off items while auditing websites.</li>
+    <li>🎯 <strong>WCAG 2.2 AA Focused</strong> – A curated set of high-impact accessibility criteria with direct WCAG references for clarity.</li>
+    <li>📊 <strong>Real-time Progress</strong> – Tracks audit progress dynamically and displays a score.</li>
+    <li>📂 <strong>Export Findings (CSV)</strong> – Allows users to download audit results in \`.csv\` format.</li>
+    <li>🔄 <strong>Reset Functionality</strong> – Clear all selections to start a fresh audit.</li>
+    <li>⭐ <strong>GitHub Integration</strong> – Displays live star and fork counts from the GitHub repository, encouraging community engagement.</li>
 </ul>`,
-        role: `- Designed and developed a clean, intuitive user interface for tracking expenses.<br/>
-- Integrated interactive line charts using <strong>SwiftUICharts</strong> for enhanced data presentation.<br/>
-- Added dark mode support to improve accessibility and user experience in different lighting conditions.<br/>
-- Built a robust system ensuring the app delivered real-time notification updates effectively.`,
-},
-    // {
-    //     title: 'devLinks',
-    //     slug: 'devLinks',
-    //     techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-    //     thumbnail: '/projects/thumbnail/devLinks.jpg',
-    //     longThumbnail: '/projects/long/devLinks.jpg',
-    //     images: [
-    //         '/projects/images/devLinks-1.png',
-    //         '/projects/images/devLinks-2.png',
-    //         '/projects/images/devLinks-3.png',
-    //     ],
-    //     sourceCode: 'https://github.com/Tajmirul/devsLink',
-    //     liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-    //     year: 2023,
-    //     description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
-    //
-    //         I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-    //     role: ``,
-    // },
+        role: `- Conceptualized and developed a lightweight tool to promote accessibility awareness among developers.<br/>
+- Built an interactive and user-friendly interface using <strong>HTML, CSS, and JavaScript</strong>.<br/>
+- Implemented real-time progress tracking and dynamic scoring features to enhance the user experience.<br/>
+- Created functionality to export findings in CSV format for better record-keeping and sharing.<br/>
+- Integrated live GitHub project metrics, showcasing community engagement and encouraging contributions.<br/>
+- Focused on adherence to WCAG 2.2 AA guidelines to ensure developers target high-priority accessibility fixes.`,
+    }
 ];
 
 export const MY_EXPERIENCE = [
